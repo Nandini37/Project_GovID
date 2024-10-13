@@ -2,3 +2,5 @@
 Gitconfig.txt
 .dist
 static
+runs
+yolov8n.pt
