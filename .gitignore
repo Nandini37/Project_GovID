@@ -4,3 +4,5 @@ Gitconfig.txt
 static
 runs
 yolov8n.pt
+__pycache__
+
