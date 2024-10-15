@@ -1,5 +1,5 @@
 names: [name_value, gender_value, dob_key, dob_value, adhar_number_value, name_key]
 nc: 6
-test: aadhar/test/images
-train: aadhar/train/images
-val: aadhar/valid/images
+test:  /content/datasets/test/images
+train:  /content/datasets/train/images
+val:  /content/datasets/valid/images
