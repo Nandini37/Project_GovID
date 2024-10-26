@@ -11,8 +11,8 @@ def predict():
     result = model("image.png", save=True, conf=0.1,save_txt=True, save_crop = True)  # return a list of Results objects
 
         # Example usage:
-    txt_file = "static/runs/detect/predict/labels/image.txt"  # Your YOLO txt file
-    notes_file = "static/aadhar/notes.json"  # Your notes.json file
+    txt_file = "runs/detect/predict/labels/image.txt"  # Your YOLO txt file
+    notes_file = "jsons_notes_file/adhar.json"  # Your notes.json file
 
     # Load class names from notes.json
     class_names = load_class_names_from_json(notes_file)

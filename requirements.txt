@@ -1,5 +1,7 @@
 streamlit
 ultralytics
-numpy
+numpy<2
 pandas
 pillow
+torch
+pytesseract

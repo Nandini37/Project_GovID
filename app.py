@@ -1,6 +1,7 @@
 import streamlit as st
 from PIL import Image
 from service import predict
+from proces_output import process_crops
 import os
 import shutil
 import time
@@ -32,11 +33,15 @@ if uploaded_image is not None:
         st.write("Image Mode: ", image.mode)
 
         response = predict()
-        st.write(response)
-        st.image("static/runs/detect/predict/image.png")
+        # st.write(response)
+        st.image("runs/detect/predict/image.jpg")
+
+        result = process_crops()
+
+        st.write(result)
        # time.sleep(10)
         #os.rmdir("static/runs")
-        # shutil.rmtree("static/runs")
+        shutil.rmtree("runs")
 
 else:
     st.write("Upload an image to display its details.")
