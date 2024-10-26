@@ -8,10 +8,10 @@ def predict():
     model = YOLO("models/adharv2.pt")  # pretrained YOLO11n model
 
     # Run batched inference on a list of images
-    result = model("image.png", save=True, conf=0.1,save_txt=True, save_crop = True)  # return a list of Results objects
+    result = model("image.png", save=True, conf=0.1,save_txt=True, save_crop = True , project = "govt_id" ,name ="adhaar" )  # return a list of Results objects
 
         # Example usage:
-    txt_file = "runs/detect/predict/labels/image.txt"  # Your YOLO txt file
+    txt_file = "govt_id/adhaar/labels/image.txt"  # Your YOLO txt file
     notes_file = "jsons_notes_file/adhar.json"  # Your notes.json file
 
     # Load class names from notes.json

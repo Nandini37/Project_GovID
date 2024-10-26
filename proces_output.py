@@ -4,7 +4,7 @@ from PIL import Image
 
 
 required_key_names = ['gender_value','dob_value','adhar_number_value','name_value']
-crops_path = 'runs/detect/predict/crops'
+crops_path = 'govt_id/adhaar/crops'
 
 
 
