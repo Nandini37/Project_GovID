@@ -34,14 +34,14 @@ if uploaded_image is not None:
 
         response = predict()
         # st.write(response)
-        st.image("runs/detect/predict/image.jpg")
+        st.image("govt_id/adhaar/image.jpg")
 
         result = process_crops()
 
         st.write(result)
        # time.sleep(10)
         #os.rmdir("static/runs")
-        shutil.rmtree("runs")
+        shutil.rmtree("govt_id/adhaar/")
 
 else:
     st.write("Upload an image to display its details.")
