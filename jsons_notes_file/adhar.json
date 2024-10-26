@@ -1,0 +1,33 @@
+{
+    "categories": [
+      {
+        "id": 0,
+        "name": "name_value"
+      },
+      {
+        "id": 1,
+        "name": "gender_value"
+      },
+	{
+        "id": 2,
+        "name": "dob_key"
+      },
+	{
+        "id": 3,
+        "name": "dob_value"
+      },
+	{
+        "id": 4,
+        "name": "adhar_number_value"
+      },
+	{
+        "id": 5,
+        "name": "name_key"
+      }
+    ],
+    "info": {
+      "year": 2023,
+      "version": "1.0",
+      "contributor": "Label Studio"
+    }
+  }

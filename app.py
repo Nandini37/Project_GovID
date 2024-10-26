@@ -36,7 +36,7 @@ if uploaded_image is not None:
         st.image("static/runs/detect/predict/image.png")
        # time.sleep(10)
         #os.rmdir("static/runs")
-        shutil.rmtree("static/runs")
+        # shutil.rmtree("static/runs")
 
 else:
     st.write("Upload an image to display its details.")

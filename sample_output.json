@@ -1,0 +1,12 @@
+{
+    "gender_value":"male",
+    "dob_value":"12/12/2002",
+    "adhar_number_value":"8523825988598",
+    "name_value":"Sparsh"
+},
+{
+    "gender":"male",
+    "dob":"12/12/2002",
+    "adhar_number":"8523825988598",
+    "name":"Sparsh"
+}

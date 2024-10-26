@@ -8,7 +8,7 @@ def predict():
     model = YOLO("models/adharv2.pt")  # pretrained YOLO11n model
 
     # Run batched inference on a list of images
-    result = model("image.png", save=True, conf=0.1,save_txt=True)  # return a list of Results objects
+    result = model("image.png", save=True, conf=0.1,save_txt=True, save_crop = True)  # return a list of Results objects
 
         # Example usage:
     txt_file = "static/runs/detect/predict/labels/image.txt"  # Your YOLO txt file
