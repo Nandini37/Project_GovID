@@ -21,27 +21,28 @@ if uploaded_image is not None:
     if st.button("Save Me"):
     # Perform an action when the button is clicked
    
-        image.save("image.jpg")
-        st.write("Button clicked! Performing an operation...")
-    
-        # Display the image in the main window
-        st.image(image, caption="Uploaded Image", use_column_width=True)
+        try:
+            image.save("image.jpg")
+            st.write("Button clicked! Performing an operation...")
         
-        # Display image details
-        st.write("Image Format: ", image.format)
-        st.write("Image Size: ", image.size)
-        st.write("Image Mode: ", image.mode)
+            # Display the image in the main window
+            st.image(image, caption="Uploaded Image", use_column_width=True)
+            
+            # Display image details
+            st.write("Image Format: ", image.format)
+            st.write("Image Size: ", image.size)
+            st.write("Image Mode: ", image.mode)
 
-        response = predict()
-        # st.write(response)
-        st.image("govt_id/adhaar/image.jpg")
+            response = predict()
+            # st.write(response)
+            st.image("govt_id/adhaar/image.jpg")
 
-        result = process_crops()
+            result = process_crops()
 
-        st.write(result)
-       # time.sleep(10)
-        #os.rmdir("static/runs")
-        shutil.rmtree("govt_id/adhaar/")
+            st.write(result)
+        except: 
+            if os.path.isdir("govt_id/adhaar/") :
+                shutil.rmtree("govt_id/adhaar/")
 
 else:
     st.write("Upload an image to display its details.")
