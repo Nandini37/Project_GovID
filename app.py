@@ -21,7 +21,7 @@ if uploaded_image is not None:
     if st.button("Save Me"):
     # Perform an action when the button is clicked
    
-        image.save("image.png")
+        image.save("image.jpg")
         st.write("Button clicked! Performing an operation...")
     
         # Display the image in the main window
